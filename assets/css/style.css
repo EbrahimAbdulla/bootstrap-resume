@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,100;1,900&display=swap');
+body{
+    font-family:'Roboto',sans-serif !important;
+    font-size: 15px;
+    line-height: 2em;
+    color: #333;
+    font-weight: bold;
+    background-color: #fff;
+    background-position: center;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+   margin: 0 0 15px;
+}
+
+h2{
+    font-size: 20px !important;
+    line-height: 2em !important;
+    font-weight: 700 !important; 
+}
+
+h3{
+    font-size: 15px !important;
+    line-height: 2em !important;
+    font-weight: 700 !important; 
+}
+h4{
+    font-size: 15px !important;
+    line-height: 2em !important;
+    font-weight: 700 !important; 
+}
+
+h5{
+    font-size: 15px !important;
+    line-height: 2em !important;
+    font-weight: 700 !important; 
+}
+a{
+    color: rgb(100, 100, 247) !important;
+}
+p{
+    margin-bottom: 20px !important;
+}
+
+
+.column-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-col-block{
+    width:50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left:0;
+}
+
+.right-col-block{
+    width: 50%;
+    position: absolute;
+    right: 0;
+
+}
+
+@media (max-width:600px) {
+    .left-col-block{
+        width: 100%;
+        position: relative;
+    }
+    .right-col-block{
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh;          /* first column should occupy 100% height */
+    vertical-align: middle;
+    position: relative;
+}
+
+.header .profile-pic{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    background-image:url(../img/ibru.jpg);
+    background-size:cover; 
+}
+ /* gradient */
+.header .profile-pic:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-40deg,rgb(91, 37, 238)0%,green 10%,rgb(91, 37, 238)20%,transparent 30%,transparent 100%);
+}
+
+.header .content{
+    position:absolute; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.header .content h1{
+    font-size: 40px;
+    color:#fff; 
+    line-height: 1;
+    margin: 0;   
+}
+
+.header .content p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.header .content .social-icon{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.header .content .social-icon li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.header .content .social-icon li a{
+    display:block;
+    font-size: 35px;
+    color: black;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 100%;
+    /* border: 1px solid black; */
+}
+
+.header .content .social-icon li a:hover{
+    color:#fff;
+}
+
+.section-wrapper{
+    padding: 30px;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    font-family:cursive;
+    font-weight: bold;
+}
+
+.grey-bg{
+    background-color: rgb(254, 252, 252);
+}
+
+.expertise-item{
+    margin-bottom: 5px;
+    
+}
+
+.expertise-item h4{
+    font-weight: bold;
+    font-family:cursive;
+}
+
+.section-tittle{
+    margin-bottom: 30px;
+}
+
+.form{
+    margin: 4px 4px 4px 4px;
+    padding: 15px 15px 15px 15px ;
+    font-weight :500;
+    border: 2px solid #333;
+}
